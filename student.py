@@ -14,7 +14,7 @@ with st.sidebar:
         menu_icon="menubutton-wide",
         default_index=0
     )
-df=pd.read_csv(r"C:\Users\prabh\OneDrive\Documents\StreamlitProjets\data\student_data.csv")
+df=pd.read_csv("student_data.csv")
 if(selected=="Raw Data"):
     st.subheader("📑Raw Data")
     st.dataframe(df)
